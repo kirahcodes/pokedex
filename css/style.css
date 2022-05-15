@@ -20,6 +20,17 @@
 }
 
 body {
+	font-family: 'IBM Plex Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'JetBrains Mono', sans-serif;
+	text-transform: capitalize;
 }
 
 header {
@@ -30,4 +41,7 @@ footer {
 
 ul li {
 	text-transform: capitalize;
+}
+
+.pokemon-name {
 }
