@@ -35,7 +35,7 @@ function buildPage(data) {
 	let pokemonTypes = data.types;
 	let pokemonSprite = data.sprites['front_default'];
 
-	// console.log(data);
+	console.log(data);
 	// console.log(pokemonAbilities);
 
 	renderPokemonID(pokemonID);
@@ -103,9 +103,9 @@ function fetchDescription(ability) {
 		.then((res) => res.json()) // parse response as JSON
 		.then((data) => {
 			// console.log(data);
-			let description = data['effect_entries'][1].effect;
-			console.log('description: ' + description);
-			return description;
+			// let description = data['effect_entries'][1].effect;
+			// console.log('description: ' + description);
+			// return description;
 		})
 		.catch((err) => {
 			console.log(`Error: ${err}`);
