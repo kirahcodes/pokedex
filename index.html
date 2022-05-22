@@ -17,14 +17,24 @@
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/reset.css" />
 		<link rel="stylesheet" href="css/style.css" />
+
+		<!-- ColorThief js CDN-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
 	</head>
 
 	<body>
 		<h1>PokeDB</h1>
 
-		<label for="pokemon">Enter Pokemon or Pokemon ID</label>
-		<input type="text" name="pokemon" id="pokemon" />
-		<button type="submit">Search</button>
+		<form>
+			<label for="pokemon">Enter Pokemon name or ID</label><br />
+			<input
+				placeholder="Search name or ID"
+				type="text"
+				name="pokemon"
+				id="pokemon"
+			/>
+			<button type="submit">Search</button>
+		</form>
 
 		<div class="card">
 			<h3 class="pokemon-name"></h3>
